@@ -1,1 +1,43 @@
-<p>manageairline works!</p>
+<h1 style="color:rgb(0, 0, 0);">AirLine List</h1>
+
+ 
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Flight Name</th>
+            <th>Logo</th>
+            <th>Flight Number</th>
+            <th>From Place</th>
+            <th>To Place</th>
+            <th>Start Date Time</th>
+            <th>End Date Time</th>
+            <th>Scheduled Days</th>
+            <th>Instrument Used</th>
+            <th>Business Class Seats</th>
+            <th>Non Business Class Seats</th>
+            <th>Ticket Cost</th>
+            <th>Number of Rows</th>
+            <th>Meal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let airlineDetails of airlineDetailsModel; index as i, first as f, last as l, even as e, odd as o"
+        [style.background]="e ? '#ccc': '#fff'">
+            <td>{{ airlineDetails.airlineName }} </td>
+            <td><img src="{{airlineDetails.uploadLogo}}"></td>
+            <td>{{ airlineDetails.flightNumber }} </td>
+            <td>{{ airlineDetails.fromPlace }}</td>
+            <td>{{ airlineDetails.toPlace }}</td>
+            <td>{{ airlineDetails.startdatetime }}</td>
+            <td>{{ airlineDetails.enddatetime }}</td>
+            <td>{{ airlineDetails.scheduleddays }}</td>
+            <td>{{ airlineDetails.instrumentUsed }}</td>
+            <td>{{ airlineDetails.tNoBusinessClassSeats }}</td>
+            <td>{{ airlineDetails.tNoNonBusinessClassSeats }}</td>
+            <td>{{ airlineDetails.ticketCost }}</td>
+            <td>{{ airlineDetails.numberofRows }}</td>
+            <td>{{ airlineDetails.meal }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -19,10 +19,10 @@ export class SearchflightComponent implements OnInit {
  
 
   public airlineModel:  Airline[] = [
-    new Airline('IndigoAir','123',1234,'abc','Bangalore','Delhi','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
-    new Airline('Emirites','vgre',2345,'aaa','Goa','Mumbai','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
-    new Airline('Kingfisher','dwqd',3456,'por','Bangalore','Mumbai','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
-    new Airline('AirIndia','dwq',4567,'verde','Goa','Delhi','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none')
+    new Airline('IndigoAir','https://static.goindigo.in/content/dam/indigov2/6e-website/downloadapp/Feature-Image.png',1234,'abc','Bangalore','Delhi','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
+    new Airline('Emirites','https://flightstatus24.com//wp-content/uploads/2018/07/649e1c738c189557e58cf78e1ec21cfe.jpg',2345,'aaa','Goa','Mumbai','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
+    new Airline('Kingfisher','https://i.pinimg.com/originals/45/88/c1/4588c16bede19dc0d53df8f32c131495.jpg',3456,'por','Bangalore','Mumbai','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none'),
+    new Airline('Qatar','https://1000logos.net/wp-content/uploads/2020/09/Air-India-logo.jpg',4567,'verde','Goa','Delhi','13-07-2021 23:48','31-07-2021 05:48','monday','normal',20,50,1000,10,'none')
 
   ];
 

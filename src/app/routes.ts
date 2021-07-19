@@ -5,12 +5,14 @@ import { BookflightComponent } from "./components/bookflight/bookflight.componen
 import { LoginComponent } from "./components/login/login.component";
 import { ManageairlineComponent } from "./components/manageairline/manageairline.component";
 import { SearchflightComponent } from "./components/searchflight/searchflight.component";
+import { AuthGuard } from "./gaurds/auth.guard";
 
 
 export const routes:Routes=[
     {
         path: 'addairline',
-        component: AddairlineComponent
+        component: AddairlineComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: 'ar',
@@ -19,15 +21,18 @@ export const routes:Routes=[
     }, 
     {
         path: 'bookflight',
-        component: BookflightComponent
+        component: BookflightComponent,
+        canActivate:[AuthGuard]
     },
     {
         path:'searchflight',
-        component:SearchflightComponent
+        component:SearchflightComponent,
+        canActivate:[AuthGuard]
     },
     {
         path:'manageairline',
-        component:ManageairlineComponent
+        component:ManageairlineComponent,
+        canActivate:[AuthGuard]
     },
     {
         path: '',
