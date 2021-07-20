@@ -22,22 +22,24 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let airlineDetails of airlineDetailsModel; index as i, first as f, last as l, even as e, odd as o"
+        <tr *ngFor="let a of airline; index as i, first as f, last as l, even as e, odd as o"
         [style.background]="e ? '#ccc': '#fff'">
-            <td>{{ airlineDetails.airlineName }} </td>
-            <td><img src="{{airlineDetails.uploadLogo}}"></td>
-            <td>{{ airlineDetails.flightNumber }} </td>
-            <td>{{ airlineDetails.fromPlace }}</td>
-            <td>{{ airlineDetails.toPlace }}</td>
-            <td>{{ airlineDetails.startdatetime }}</td>
-            <td>{{ airlineDetails.enddatetime }}</td>
-            <td>{{ airlineDetails.scheduleddays }}</td>
-            <td>{{ airlineDetails.instrumentUsed }}</td>
-            <td>{{ airlineDetails.tNoBusinessClassSeats }}</td>
-            <td>{{ airlineDetails.tNoNonBusinessClassSeats }}</td>
-            <td>{{ airlineDetails.ticketCost }}</td>
-            <td>{{ airlineDetails.numberofRows }}</td>
-            <td>{{ airlineDetails.meal }}</td>
+            <td>{{ a.airlineName }} </td>
+            <td><img src="{{a.uploadLogo}}"></td>
+            <td>{{ a.flightNumber }} </td>
+            <td>{{ a.fromPlace }}</td>
+            <td>{{ a.toPlace }}</td>
+            <td>{{ a.startdatetime }}</td>
+            <td>{{ a.enddatetime }}</td>
+            <td>{{ a.scheduleddays }}</td>
+            <td>{{ a.instrumentUsed }}</td>
+            <td>{{ a.tNoBusinessClassSeats }}</td>
+            <td>{{ a.tNoNonBusinessClassSeats }}</td>
+            <td>{{ a.ticketCost }}</td>
+            <td>{{ a.numberofRows }}</td>
+            <td>{{ a.meal }}</td>
         </tr>
     </tbody>
 </table>
+
+

@@ -12,6 +12,7 @@ import { BookflightComponent } from './components/bookflight/bookflight.componen
 import { SearchflightComponent } from './components/searchflight/searchflight.component';
 import { ManageairlineComponent } from './components/manageairline/manageairline.component';
 import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginComponent } from './components/login/login.component';
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
