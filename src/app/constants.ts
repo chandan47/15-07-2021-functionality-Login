@@ -1,0 +1,1 @@
+export const reqAirlineUrl:string = 'http://localhost:58003/api/AirlineDetail';
